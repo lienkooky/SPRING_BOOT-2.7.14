@@ -1,7 +1,7 @@
 plugins {
-	id 'java'
-	id 'org.springframework.boot' version '2.7.14'
-	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+    id 'java'
+    id 'org.springframework.boot' version '2.7.18'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
 }
 
 group = 'com.springboot'
@@ -24,22 +24,16 @@ repositories {
 	maven { url 'https://maven.aliyun.com/repository/spring/' }
 	maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
 	maven { url 'https://maven.aliyun.com/repository/spring-plugin/' }
-	
+
 	mavenCentral()
 }
 
 dependencies {
-	classpath("org.springframework.boot:spring-boot-gradle-plugin:2.7.14.RELEASE")
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
-	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client' 
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'org.springframework.security:spring-security-test' 
 }
 
 tasks.named('test') {

@@ -1,13 +1,13 @@
-package com.springboot.jwt;
+package com.springboot2714;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JwtApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JwtApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
